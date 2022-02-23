@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+            Activity
+        </title>
+    </head>
+    <body>
+        <p>
+            How do you declare the arrays?
+            <h4 id="declaration of arrays"></h4>
+        </p>
+        <hr>
+        <p>
+            How do you fetch the first element of the array?
+            <h4 id="Fetch element"></h4>
+        </p>
+        <hr>
+        <p>
+            How do you fetch the second element of the array?
+            <h4 id="second element"></h4>
+        </p>
+        <hr>
+        <p>
+            How do you fetch the third element of the array?
+            <h4 id="third element"></h4>
+        </p>
+        <hr>
+        <p>
+            How do you get the lenght of the array?
+            <h4 id="length"></h4>
+        </p>
+        <hr><p>
+            How do you loop the array?
+            <h4 id="loop"></h4>
+        </p>
+        <hr>
+        <p>
+            How do you add the elements at the end of the array?
+            <h4 id="add"></h4>
+        </p>
+        <hr>
+    </body>
+    <script>
+        var fruits=["MANGO","ORANGE","APPLE"];
+        console.log(fruits);
+        document.getElementById("declaration of arrays").innerHTML=fruits;
+
+        var first=fruits[0];
+        console.log(first);
+        document.getElementById("Fetch element").innerHTML=first;
+
+        var second=fruits[1];
+        console.log(second);
+        document.getElementById("second element").innerHTML=second;
+
+        var third=fruits[2];
+        console.log(third);
+        document.getElementById("third element").innerHTML=third;
+
+        var length=fruits.length;
+        console.log(length)
+        document.getElementById("length").innerHTML=length;
+
+        var array="";
+        for(i=0; i<fruits.length; i++)
+        {console.log(fruits[i]);
+        array=array+fruits[i]+"<br>";
+        }
+        document.getElementById("loop").innerHTML=array;
+
+        fruits.push("GRAPES");
+        console.log(fruits);
+        document.getElementById("add").innerHTML=fruits;
+    </script>
+</html>
